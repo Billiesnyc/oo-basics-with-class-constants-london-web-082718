@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.detect 
+    BRANDS.detect {shoe_brand
     BRANDS << brand 
   end
 
