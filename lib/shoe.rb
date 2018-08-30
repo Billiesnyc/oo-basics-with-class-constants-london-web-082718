@@ -6,9 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-      BRANDS.detect do |shoe_brand| 
-      shoe_brand = brand
-      BRANDS << brand 
+     BRANDS.push(brand) unless BRANDS.include?(brand)
       end
   end
 
